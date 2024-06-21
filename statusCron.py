@@ -37,8 +37,8 @@ def saveStatusInLog(log, path):
 
 
 def main():
-    LOG_PATH = "/home/username/status.log"
-    SERVICES = ["apache2", "mysql", "postgresql"]
+    LOG_PATH = "/var/log/services-monitron.log"
+    SERVICES = ["api.service", "api2.service", "api3.service"]
 
     for service in SERVICES:
         log = checkServiceStatus(service)
